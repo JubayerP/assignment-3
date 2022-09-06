@@ -9,8 +9,10 @@
     <!-- Boxicons -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
 
-    <!-- DaisyUi -->
-    <link href="https://cdn.jsdelivr.net/npm/daisyui@2.25.0/dist/full.css" rel="stylesheet" type="text/css" />
+    <!-- FlowBite -->
+    <!-- <link rel="stylesheet" href="https://unpkg.com/flowbite@1.5.3/dist/flowbite.min.css" /> -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tw-elements/dist/css/index.min.css" />
+
 
     <!-- Tailwind CSS CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
@@ -33,9 +35,9 @@
     <!-- Header Start -->
     <header>
         <!-- Nav Start -->
-        <nav class="container mx-auto flex items-center lg:justify-evenly justify-around h-20">
+        <nav class="container mx-auto flex items-center lg:justify-between justify-around h-20">
             <div>
-                <h2 class="text-4xl font-bold text-[#4a4a4a]">Pro Edu</h2>
+                <h2 class="lg:text-4xl md:text-3xl sm:text-2xl text-base font-bold text-[#4a4a4a]">Pro Edu</h2>
             </div>
             <div class="lg:flex items-center sm:hidden md:hidden hidden">
                 <li class="list-none mr-9"><a class="text-[#777777] font-semibold" href="#">Home</a></li>
@@ -51,7 +53,70 @@
                 <i class='bx bx-menu lg:hidden text-4xl'></i>
             </div>
         </nav>
+        <!-- Navbar End -->
+
+        <!-- Slider Start -->
+        <section class="container mx-auto mb-24">
+
+            <div id="carouselExampleCaptions" class="carousel slide relative lg:h-screen" data-bs-ride="carousel">
+                <div class="carousel-indicators absolute right-0 bottom-0 left-0 flex justify-center p-0 mb-4">
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+                        aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                        aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                        aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner relative w-full overflow-hidden">
+                    <div class="carousel-item active relative float-left w-full ">
+                        <img src="./images/cover/cover-1.png" class="block w-full"
+                            alt="..." />
+                        <div class="carousel-caption absolute lg:top-1/4 text-center">
+                            <h1 class="lg:text-6xl sm:text-sm md:text-4xl font-bold mb-5">Get Started Digital Learning</h1>
+                            <p class="lg:text-xl sm:text-xs text-xs">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p>
+                            <button class="py-2.5 px-5 bg-[#289BDE] mt-8">Get Started</button>
+                        </div>
+                    </div>
+                    <div class="carousel-item relative float-left w-full">
+                        <img src="./images/cover/cover-5.png" class="block w-full"
+                            alt="..." />
+                            <div class="carousel-caption md:block absolute lg:top-1/4 text-center">
+                                <h1 class="lg:text-6xl sm:text-sm md:text-4xl font-bold mb-5">Get Started Digital Learning</h1>
+                                <p class="lg:text-xl sm:text-xs text-xs">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p>
+                                <button class="py-2.5 px-5 bg-[#289BDE] mt-8">Get Started</button>
+                            </div>
+                    </div>
+                    <div class="carousel-item relative float-left w-full">
+                        <img src="./images/cover/cover-3.jpg" class="block w-full"
+                            alt="..." />
+                            <div class="carousel-caption absolute lg:top-1/4 text-center">
+                                <h1 class="lg:text-6xl sm:text-sm md:text-4xl font-bold mb-5">Get Started Digital Learning</h1>
+                                <p class="lg:text-xl sm:text-xs text-xs">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p>
+                                <button class="py-2.5 px-5 bg-[#289BDE] mt-8">Get Started</button>
+                            </div>
+                    </div>
+                </div>
+                <button
+                    class="carousel-control-prev absolute top-0 bottom-0 flex items-center justify-center p-0 text-center border-0 hover:outline-none hover:no-underline focus:outline-none focus:no-underline left-0"
+                    type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon inline-block bg-no-repeat" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button
+                    class="carousel-control-next absolute top-0 bottom-0 flex items-center justify-center p-0 text-center border-0 hover:outline-none hover:no-underline focus:outline-none focus:no-underline right-0"
+                    type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                    <span class="carousel-control-next-icon inline-block bg-no-repeat" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+
+        </section>
+        <!-- Slider End -->
     </header>
+
+
+    <!-- <script src="https://unpkg.com/flowbite@1.5.3/dist/flowbite.js"></script> -->
+    <script src="https://cdn.jsdelivr.net/npm/tw-elements/dist/js/index.min.js"></script>
 </body>
 
 </html>
