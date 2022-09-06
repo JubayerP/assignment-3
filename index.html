@@ -6,12 +6,44 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Tailwind CSS CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@2.25.0/dist/full.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        clifford: '#da373d',
+                    }
+                }
+            }
+        }
+    </script>
     <title>Document</title>
 </head>
 
 <body>
-    
+    <!-- Header Start -->
+    <header>
+        <!-- Nav Start -->
+        <nav class="container mx-auto flex items-center justify-evenly h-20">
+            <div>
+                <h2 class="text-4xl font-bold text-[#4a4a4a]">Pro Edu</h2>
+            </div>
+            <div class="flex items-center">
+                <li class="list-none mr-9"><a class="text-[#777777] font-semibold" href="#">Home</a></li>
+                <li class="list-none mr-9"><a class="text-[#777777] font-semibold" href="#">Courses</a></li>
+                <li class="list-none mr-9"><a class="text-[#777777] font-semibold" href="#">Deals</a></li>
+                <li class="list-none mr-9"><a class="text-[#777777] font-semibold" href="#">Success</a></li>
+                <li class="list-none mr-9"><a class="text-[#777777] font-semibold" href="#">About</a></li>
+                <li class="list-none mr-9"><a class="text-[#777777] font-semibold" href="#">Register</a></li>
+            </div>
+            <div>
+                <button class="py-1.5 px-5 border font-semibold rounded border-[#289BDE] text-[#289BDE] hover:bg-[#289BDE] hover:text-white duration-200">Register</button>
+            </div>
+        </nav>
+    </header>
 </body>
 
 </html>
