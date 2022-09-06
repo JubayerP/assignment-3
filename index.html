@@ -5,10 +5,16 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- Tailwind CSS CDN -->
+
+    <!-- Boxicons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+
+    <!-- DaisyUi -->
     <link href="https://cdn.jsdelivr.net/npm/daisyui@2.25.0/dist/full.css" rel="stylesheet" type="text/css" />
+
+    <!-- Tailwind CSS CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
-    <script src="https://cdn.tailwindcss.com"></script>
+
     <script>
         tailwind.config = {
             theme: {
@@ -27,11 +33,11 @@
     <!-- Header Start -->
     <header>
         <!-- Nav Start -->
-        <nav class="container mx-auto flex items-center justify-evenly h-20">
+        <nav class="container mx-auto flex items-center lg:justify-evenly justify-around h-20">
             <div>
                 <h2 class="text-4xl font-bold text-[#4a4a4a]">Pro Edu</h2>
             </div>
-            <div class="flex items-center">
+            <div class="lg:flex items-center sm:hidden md:hidden hidden">
                 <li class="list-none mr-9"><a class="text-[#777777] font-semibold" href="#">Home</a></li>
                 <li class="list-none mr-9"><a class="text-[#777777] font-semibold" href="#">Courses</a></li>
                 <li class="list-none mr-9"><a class="text-[#777777] font-semibold" href="#">Deals</a></li>
@@ -39,8 +45,10 @@
                 <li class="list-none mr-9"><a class="text-[#777777] font-semibold" href="#">About</a></li>
                 <li class="list-none mr-9"><a class="text-[#777777] font-semibold" href="#">Register</a></li>
             </div>
-            <div>
-                <button class="py-1.5 px-5 border font-semibold rounded border-[#289BDE] text-[#289BDE] hover:bg-[#289BDE] hover:text-white duration-200">Register</button>
+            <div class="md:flex justify-center items-center">
+                <button
+                    class="py-1.5 px-5 border font-semibold rounded border-[#289BDE] text-[#289BDE] hover:bg-[#289BDE] hover:text-white duration-200 sm:hidden lg:block md:block hidden md:mr-5 lg:mr-0">Register</button>
+                <i class='bx bx-menu lg:hidden text-4xl'></i>
             </div>
         </nav>
     </header>
